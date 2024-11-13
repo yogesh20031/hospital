@@ -7,7 +7,6 @@
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   /* height: 250vh; */
-  
 }
 
 :root {
@@ -121,11 +120,11 @@ header {
 /* main part  */
 main {
   padding-top: 160px;
+  overflow: hidden;
 }
 /* first view */
 
 .first-view-box {
-
   max-width: 100%;
   position: relative;
   height: 650px;
@@ -275,23 +274,22 @@ main {
   border: 0.5px solid black;
   border-radius: 5px;
 }
-.left-service-icon-box{
+.left-service-icon-box {
   height: 110px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
- 
 }
-#left-services-icon-color{
-  background-color: #1F2B6C;
-  color: #BFD2F8;
+#left-services-icon-color {
+  background-color: #1f2b6c;
+  color: #bfd2f8;
 }
-.left-service-icon-view-all{
+.left-service-icon-view-all {
   height: 44px;
   display: grid;
   place-items: center;
-  background-color: #1F2B6C;
+  background-color: #1f2b6c;
   border-radius: 0 0 5px 5px;
 }
 .home-service-second-middle {
@@ -302,14 +300,14 @@ main {
   justify-content: space-between;
   align-items: flex-start;
 }
-.second-service-heading{
+.second-service-heading {
   font-size: 30px;
   font-weight: 500;
   font-family: var(--SUB-HEADING-FONT);
   color: var(--MAIN-HEADING-COLOR);
   line-height: 30px;
 }
-.second-service-list{
+.second-service-list {
   width: 500px;
   height: 110px;
   list-style: none;
@@ -317,7 +315,7 @@ main {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
-.second-service-list>li{
+.second-service-list > li {
   font-size: 20px;
   font-family: var(--SUB-HEADING-FONT);
   font-weight: 500;
@@ -327,15 +325,15 @@ main {
   gap: 15px;
 }
 
-.second-service-list-dot{
+.second-service-list-dot {
   height: 16px;
   width: 16px;
   border-radius: 50%;
   background-color: #159eec;
 }
-.second-service-explain{
+.second-service-explain {
   font-size: 17px;
-  font-family:var(--SUB-HEADING-FONT);
+  font-family: var(--SUB-HEADING-FONT);
   font-weight: 400;
   line-height: 22px;
 }
@@ -353,5 +351,63 @@ main {
 
 /* our specialties */
 
+.specialties-box {
+  height: 650px;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.caption-specialties {
+  font-size: 20px;
+  font-family: var(--SUB-HEADING-FONT);
+  color: var(--SUB-HEADING-COLOR);
+  font-weight: 700;
+  line-height: 21px;
+}
 
+.specialties-catageory-box {
+  height: 516px;
+  width: 1000px;
 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.specialties-catageory {
+  height: 172px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border: 0.17px solid hsla(0, 0%, 0%, 0.1);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--SUB-HEADING-FONT);
+}
+#specialties-catageory-bones {
+  background-color: var(--MAIN-HEADING-COLOR);
+  color: #bfd2f8;
+}
+
+/* book appoinment form */
+
+.book-appointment-form-box{
+  position: relative;
+  height: 573px;
+  background: url(../code-pic/appoitnment-bg.png);
+  background-size: cover;
+  background-position: center;
+}
+.book-appointment-form-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(128, 128, 128, 0.5); /* Adjust gray (128,128,128) and opacity (0.5) */
+  pointer-events: none; /* Allows clicks to pass through overlay */
+}
