@@ -17,7 +17,13 @@ body {
   --SUB-HEADING-COLOR: #159eec;
   --BORDER: 1px solid red;
 }
-
+.site-font {
+  font-family: var(--SUB-HEADING-FONT);
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
 /* upper header */
 header {
   position: fixed;
@@ -818,11 +824,13 @@ footer {
   font-weight: 400;
   font-family: var(--SUB-HEADING-FONT);
   color: var(--MAIN-HEADING-COLOR);
+  line-height: 22px;
 }
 .main-bg-p {
   font-family: var(--MAIN-HEADING-FONT);
   font-weight: 400;
   font-size: 48px;
+  line-height: 55px;
   color: var(--MAIN-HEADING-COLOR);
   z-index: 100;
   position: relative;
@@ -924,4 +932,204 @@ footer {
 }
 .box-scroll-dot-about-color {
   background-color: #bfd2f8;
+}
+
+/* services  */
+
+/* service main bg */
+
+/* hospitali services */
+
+.service-bg-div {
+  background: url(../code-pic/service-bg.png);
+}
+
+.hospital-services-main-box {
+  height: 1124px;
+  width: 1000px;
+  /* background-color: red; */
+  margin: 50px auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+.check-up-box-bg-blur,
+.check-up-box {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.check-up-box {
+  position: relative;
+}
+.img-with-bg {
+  height: 309px;
+  width: 100%;
+  background: url(../code-pic/free-services-pic.png);
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  display: grid;
+  place-items: center;
+}
+.img-with-bg::before {
+  content: "";
+  background-color: rgba(31, 43, 108, 0.65);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.img-with-bg > img {
+  z-index: 100;
+  position: relative;
+}
+.free-check-up-heading {
+  font-family: var(--SUB-HEADING-FONT);
+  font-weight: 500;
+  font-size: 26px;
+  color: var(--MAIN-HEADING-COLOR);
+  line-height: 25px;
+}
+.free-check-describe {
+  font-weight: 400;
+  font-family: var(--SUB-HEADING-FONT);
+  font-size: 16px;
+  line-height: 22px;
+}
+.learn-more-free-check {
+  font-family: var(--SUB-HEADING-FONT);
+  color: var(--SUB-HEADING-COLOR);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.free-check-up-heading,
+.free-check-describe,
+.learn-more-free-check {
+  margin: 0 0 20px 20px;
+}
+.checkup-bandage-logo {
+  position: absolute;
+  top: 260px;
+  left: 217px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+/* doctors */
+
+/* doctors-profile */
+
+.doctors-page-profile {
+  margin: 50px auto 0 auto;
+  height: 1096px;
+  width: 992px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+}
+
+/* news */
+
+.home-news-main-box-for-doctors {
+  margin-top: 0;
+}
+
+/* news page */
+
+/* main bg */
+
+
+.news-main{
+  position: relative;
+}
+.main-bg-div-for-news {
+  background: url(../code-pic/news-bg.png);
+}
+
+/* news-recent-post */
+
+.news-recent-post-main-div{
+  width: 314px;
+  position: absolute;
+  top: 470px;
+  left: 980px;
+}
+.search-news{
+  width: 100%;
+  background-color: var(--MAIN-HEADING-COLOR);
+  padding: 20px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  outline-color: transparent;
+  outline: none;
+  border: none;
+  position: relative;
+  z-index: 10;
+}
+.recent-post-heading{
+  margin-bottom: 20px;
+}
+.recent-blog{
+  display: flex;
+  gap: 15px;
+}
+.recent-post-div{
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: red;
+}
+.recent-blog-caption{
+  font-size: 12px;
+}
+.recent-post-blog{
+  font-size: 14px;
+  font-weight: 500;
+}
+/* news box */
+
+.news-collection-main-box{
+  margin-top: 60px;
+  position: relative;
+  left: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.news-collection-sub-div{
+  width: 658px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.blog-details {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.news-info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.news-read-more{
+  width: 154px;
+  height: 45px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--SUB-HEADING-FONT);
+  color: var(--MAIN-HEADING-COLOR);
+  background-color: #BFD2F8;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
